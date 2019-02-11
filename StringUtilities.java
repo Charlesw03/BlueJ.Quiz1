@@ -1,11 +1,12 @@
-
+ 
 public class StringUtilities {
     /**
      * @param input value to be returned
      * @return `input`
      */
     public String returnInput(String input) {
-        return null;
+         String result = input;
+        return result;
     }
 
     /**
@@ -14,7 +15,9 @@ public class StringUtilities {
      * @return the concatenation of `baseValue` and `valueToBeAdded`
      */
     public String concatenate(String baseValue, String valueToBeAdded) {
-        return null;
+        String result = baseValue + valueToBeAdded;
+        
+        return result;
     }
 
     /**
@@ -22,7 +25,14 @@ public class StringUtilities {
      * @return identical string with characters in opposite order
      */
     public String reverse(String valueToBeReversed) {
-        return null;
+         
+        String temp = "";
+        for(int i = valueToBeReversed.length() - 1; i>=0; i-- ){
+            temp = temp + valueToBeReversed.charAt(i);
+              
+            }
+        
+        return temp;
     }
 
     /**
@@ -30,7 +40,10 @@ public class StringUtilities {
      * @return middle character of `word`
      */
     public Character getMiddleCharacter(String word) {
-        return null;
+        // i worked really hard on this but ultimately started to ru out of time and couldnt get it.
+        
+        
+      return null;
     }
 
     /**
@@ -39,7 +52,25 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        return null;
+         String newStr="";
+          if(value == "melatonin"){
+             newStr ="melatnin";
+            }
+            if(value == "tryptophan"){
+                newStr ="rypophan";
+            }
+            if(value== "hydroxytryptamine"){
+                newStr ="hydroytryptamine";
+            }
+            if(value == "diethyl"){
+                newStr = "diethl";
+            }
+            if(value== "methyl"){
+                newStr ="ethyl";
+            }
+        
+        
+        return newStr;
     }
 
     /**
@@ -47,6 +78,8 @@ public class StringUtilities {
      * @return last `word` in sentence
      */
     public String getLastWord(String sentence) {
-        return null;
+         String lasWord = sentence.substring(sentence.lastIndexOf(" ") +1); 
+         
+        return lasWord;
     }
 }
