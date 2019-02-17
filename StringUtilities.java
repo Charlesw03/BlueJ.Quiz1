@@ -41,9 +41,12 @@ public class StringUtilities {
      */
     public Character getMiddleCharacter(String word) {
         // i worked really hard on this but ultimately started to ru out of time and couldnt get it.
+          char answer = word.charAt(word.length()/2); 
+            //cutting the length of the string in half and indexing the 
+            // the middle char and assigning it to answer. return answer
+          // maybe try to use a .charAt(whateverString.length/2) 
         
-        
-      return null;
+      return answer;
     }
 
     /**
@@ -52,26 +55,28 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-         String newStr="";
-          if(value == "melatonin"){
-             newStr ="melatnin";
-            }
-            if(value == "tryptophan"){
-                newStr ="rypophan";
-            }
-            if(value== "hydroxytryptamine"){
-                newStr ="hydroytryptamine";
-            }
-            if(value == "diethyl"){
-                newStr = "diethl";
-            }
-            if(value== "methyl"){
-                newStr ="ethyl";
-            }
+       //returning the string value and replacing(charToRemove which turned intoa string with .toString())
+       // and replacing the charToRemove with a string type space;
+        
+        return value.replaceAll(charToRemove.toString(),"");
+       
         
         
-        return newStr;
-    }
+        
+       
+      // String has a .replace() method
+         // String has a .split() method which cuts a string at a given charachter
+        
+         //if (value.contains(charToRemove)) {
+            //String newValue = value.replace(charToRemove,"");
+            
+        
+        
+        }
+         
+         
+        
+    
 
     /**
      * @param sentence String delimited by spaces representative of a sentence

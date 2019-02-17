@@ -25,7 +25,13 @@ public class LoopFun
      */
     public String acronym(String phrase) {
         String acronym ="";
-        if(phrase =="digital immunity infrastructure"){
+        //phrase.split();
+        
+        // use something with String.split(" ");
+        
+        
+        
+        /*if(phrase =="digital immunity infrastructure"){
             acronym = "DII";
         } 
         if(phrase =="John Charles Cutler"){
@@ -48,7 +54,7 @@ public class LoopFun
         } 
         if(phrase == "Tactical Reconnaissance Nuclear Powered Aerospace Platform"){
             acronym = "TRNPAP";
-        }
+        } */
 
         
         return acronym;
